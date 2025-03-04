@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../libs/heatmap.min.js"></script>
+    <script src="../libs/jquery-3.6.0.min.js"></script>
+    <script src="../libs/turf.min.js"></script>
+    <script src="../libs/jsts.min.js"></script>
+
+    <script src="../libs/kriging.js"></script>
+    <script src="../libs/proj4.js"></script>
+    <script src="../libs/dat.gui.min.js"></script>
+    <script src="../libs/stats.min.js"></script>
+    <script src="../libs/decomp.min.js"></script>
+    <script src="../libs/lz-string.min.js"></script>
+    <script src="../libs/earcut.min.js"></script>
+    <title>图界（mbs.js）</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #map{
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="../js/resize.js"></script> 
+    <script src="../libs/Cesium/Cesium.js"></script> 
+    <link rel="stylesheet" href="../libs/Cesium/Widgets/widgets.css">
+    
+    <script type="module">
+        import Mbs from "/mbs/mbs-1.0.0.js"; 
+
+        let myViewer = new Mbs.Viewer("map", {
+            ionToken:
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9." +
+                "eyJqdGkiOiJhZDk2ZTkxMS03MmEyLTRiOGItOWZiMC0y" +
+                "NmE0ODg1ODRhOWQiLCJpZCI6MTMzMzE0LCJpYXQiOjE3MjE2MzIwMjV9." +
+                "_sSyHcKKWPpBECnlZXMVmAK5bF49i6YMg_CqgJCLhfI",
+            sunLightFlag: true, //太阳光照开关
+            animateFlag: false, //动画开关
+            globeFlag: true,
+            animateSpeed: 2000, //动画速度
+            //backGroundColor:"#4b4b4b"
+        });  
+    </script>
+  </body>
+</html>
+

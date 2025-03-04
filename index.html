@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="libs/heatmap.min.js"></script>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/turf.min.js"></script>
+    <script src="libs/jsts.min.js"></script>
+
+    <script src="libs/kriging.js"></script>
+    <script src="libs/proj4.js"></script>
+    <script src="libs/dat.gui.min.js"></script>
+    <script src="libs/stats.min.js"></script>
+    <script src="libs/decomp.min.js"></script>
+    <script src="libs/lz-string.min.js"></script>
+    <script src="libs/earcut.min.js"></script>
+    <title>图界（mbs.js）</title>
+    <style>
+        .title{
+            font-size: 20px;
+            font-weight: 800;
+            margin-left: 1%;
+        }
+    </style>
+  </head>
+  <body>
+    <script src="libs/Cesium/Cesium.js"></script> 
+    <link rel="stylesheet" href="libs/Cesium/Widgets/widgets.css">
+    
+    <script type="module" src="/js/main.js"></script>
+    <script src="/data/menu.js"></script>
+    <div class="title">
+            完整示例请去官网【www.mapbs.com】查看
+    </div>
+    <ul id="menu_all">
+    </ul>
+  </body>
+</html>
+
